@@ -5,15 +5,17 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>My first webpage</title>
+        <link rel="stylesheet" href="style.css"/>   <!-- Chama o style.css com as caracteristicas de cor/estilo/etc-->
+        
+
     </head>
 
     <body>
+
+    <div id="h1"></div>
+    <div id="h2"></div>
+    <div id="h3"></div>
         <!-- Cores e tipos de font - TESTE -->
-        <style>
-            h2{color: firebrick; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-style: italic;}
-            h3{color:darkorange; font-family: 'Times New Roman', Times, serif;}
-            h1{color:antiquewhite; font-weight: bolder;}
-            </style>
 
             <!-- Spookz-->
         <h2> 
@@ -74,16 +76,19 @@
         <label> <b>Pick a Season:</b></label> <br>
         <input type = "checkbox" id="Autumn" name="Autumn" value="Autumn">
         <label for="Autumn"> <b>>Autumn</b><br> </label>
-        <img src ="https://c.tenor.com/relPBdQE2yoAAAAC/spooky-month.gif" alt="SpookyMonth" style="width:200px; height:200px"><br>
+        <div id="box1"><img src ="https://c.tenor.com/relPBdQE2yoAAAAC/spooky-month.gif" alt="SpookyMonth" style="width:200px; height:200px"></div><br>
+
         <input type = "checkbox"  id="Winter" name = "Winter" value = "Winter">
         <label for "Winter"> <b>Winter</b> <br></label>
-        <img src = "https://c.tenor.com/3XNa6wp3dcoAAAAC/happy-winter-snoopy.gif" alt = "WinterTime" style = "width :200px; height:200px"><br>
+        <div id="box1"><img src = "https://c.tenor.com/3XNa6wp3dcoAAAAC/happy-winter-snoopy.gif" alt = "WinterTime" style = "width :200px; height:200px"></div><br>
+
         <input type = "checkbox" id = "Spring" name ="Spring" value = "Spring">
         <label for "Spring"> <b>Spring</b> <br></label>
-        <img src = "https://media.tenor.com/Vq1Vz2Nk31cAAAAM/wakfu-tofu.gif" alt = "SpringTime" style = "width: 200px; height: 200px"><br>
+        <div id="box1"><img src = "https://media.tenor.com/Vq1Vz2Nk31cAAAAM/wakfu-tofu.gif" alt = "SpringTime" style = "width: 200px; height: 200px"></div><br>
+
         <input type = "checkbox" id="Summer" name = "Summer" value ="Summer">
         <label for="Summer"> <b>Summer</b> <br> </label>
-        <img src = "https://i.pinimg.com/736x/0e/7f/1a/0e7f1a98e84a7e792ff783a3b2e0df15.jpg" alt="SummerPain" style = "width: 200px; height: 200px"><br>
+        <div id = "box1"><img src = "https://i.pinimg.com/736x/0e/7f/1a/0e7f1a98e84a7e792ff783a3b2e0df15.jpg" alt="SummerPain" style = "width: 200px; height: 200px"></div><br>
 
         <!-- Button tag -->
             <p> <br>
@@ -115,16 +120,9 @@
 
         <!-- Cite-->
         <h1> <b>Now something precious</b> </background-color></h1> <br>
-        <img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Carol_Singing_by_Louis_William_Wain%2C_watercolor.jpg" alt="Carol Singing">
+        <div id="box1"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Carol_Singing_by_Louis_William_Wain%2C_watercolor.jpg" alt="Carol Singing"></div>
         <p><cite>Carol Singing</cite> by Louis William Wain (1860-1939).</p>
 
-        <!-- Universal Style-->
-            <style>
-              body {
-                color:#b4880e;
-                background-color:black;
-                }
-            </style>
     </body>
 
 </html>

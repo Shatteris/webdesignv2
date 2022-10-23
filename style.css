@@ -1,0 +1,16 @@
+<html>
+{
+
+        {background-image:linear-gradient(to right, orange 70%, white 30%);}  
+
+        #h3{color:darkorange; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; font-style: italic;}
+        #h2{color:darkorange; font-family: 'Times New Roman', Times, serif;}
+        #h1{color:antiquewhite; font-weight: bolder;}
+
+        #box1
+        {
+            border: black;
+        }
+
+
+}
