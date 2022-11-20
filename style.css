@@ -1,71 +1,135 @@
 
-html {
+body {
+
+    background-color: rgb(10, 7, 5);
 
   }
 
-
-cite{
-    font-style:italic;
-    font-size:25px;
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color:orange;
+  h3 {
+    color: bisque;
   }
 
-h2{
-    font-size:100px;
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color: orangered;
+  h4{
+    color: bisque;
+    font-weight: bold;
+    font-style: italic;
+    font-size: large;
+  }
+
+  #box1
+        {
+            border: black;
+        }
+
+.Tabs > div {
+  display: flex;
+  background-color: rgb(141, 94, 22);
+  margin: 10px;
+  padding: 20px;
+  font-size: 30px;
 }
 
-h5{
-    font-style:italic;
-    font-size:70px;
-    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    color:black;   
+/* Flashlight Overlay */
+:root {
+  cursor: none;
+  --cursorX: 50vw;
+  --cursorY: 50vh;
+}
+:root:before {
+  content: '';
+  display: block;
+  width: 125%;
+  height: 125%;
+  position: fixed;
+  pointer-events: none;
+  background: radial-gradient(
+    circle 10vmax at var(--cursorX) var(--cursorY),
+    rgba(0,0,0,0) 0%,
+    rgba(0,0,0,.5) 80%,
+    rgba(0,0,0,1) 100%
+  )
 }
 
-@media only screen and (min-width: 600px) {
+
+/*Position Classes-------------------------------- */
+  .topright{
+    position: absolute;
+    right:80px;
+    bottom:350px;
+    opacity:0.9;
+    scale:100%;
+  }
+
+  .btmright{
+
+    position:absolute;
+    right: -200px;
+    bottom: -100px;
+    opacity: 0.9;
+    scale:80%;
+}
+
+  .center {
+    display: block;
+    margin-top:5%;
+    margin-left: auto;
+    margin-right: auto;
+    border-style:solid;
+    border-color: rgb(141, 109, 4);
+  }
+
+/*End of Positions--------------------------------- */
+ /* Style the tab */
+ .tab {
+  overflow: hidden;
+  border: 1px solid rgb(141, 94, 22);
+  background-color: #f1f1f100;
+  color: bisque;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+background-color: inherit;
+color: rgb(233, 197, 153);
+float: left;
+border: none;
+outline: none;
+cursor: pointer;
+padding: 14px 16px;
+transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+background-color: rgb(231, 143, 9);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+background-color: rgb(141, 94, 22);
+}
+
+/* Style the tab content */
+.tabcontent {
+display: none;
+padding: 6px 12px;
+border: 1px solid rgb(141, 94, 22);
+background-color: rgb(10, 7, 5);
+color: blanchedalmond;
+border-top: none;
+} 
+
+
+/* Screen Size Dimensions --------------------------------------------------*/
+  @media only screen and (min-width: 600px) {
     body {
-        background:linear-gradient(to right, black 50%,ivory 50%);
+      background-color: rgb(10, 7, 5);;
     }
 }
 
 @media only screen and (min-width: 320px) {
     body {
-      background-color: ivory;
+      background-color: rgb(10, 7, 5);;
     }
   }
-
-  .topright{
-    position:fixed;
-    right:80px;
-    bottom:350px;
-  }
-
-  .btmright{
-
-    position:fixed;
-    right: -200px;
-    bottom: -100px; 
-}
-
-  .center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-
-  .rightcenter{
-    display:block;
-    margin-right:400%;
-    margin-left:55%;
-    width:50%;
-  }
-
-  #box1
-  {
-      border:solid, black;
-  }
-
   

@@ -11,24 +11,50 @@
 
     <body>
 
-        <ul class="center">
-            <h2><stan>In Progress</stan></h2>
-        </ul>
+        <div id="light" style="--light-position-y: 0; --light-position-x: 0"></div>
 
-        <!-- Painting-->
-        <div id="box1"><img src="https://upload.wikimedia.org/wikipedia/commons/e/e2/Carol_Singing_by_Louis_William_Wain%2C_watercolor.jpg" alt="Carol Singing by Louis William Wain" class="center"></div>
-        <ul class="center"><span><cite>Carol Singing</cite> <cite>by Louis William Wain (1860-1939). </cite></span></ul>
-        <!---->
+        <!-- HEADIMAGE-->
+        <div id ="headimg">    
+            <img src ="content/headIMG.png" alt="Lil' Cupboard" class="center">            
+        </div>
+        <!--HEADIMAGE-->
 
-        
-        <ul class="rightcenter">
-            <h5> <stan>We're sorry</stan></h5>
-        </ul>
-    
-        <div id="progresstext"><img src= "content/progress_text.gif" alt="In Progress animation" class="topright"></div>
-        <div id ="progress1"><img src= "content/progress_anim.gif" alt="She's pretending cheerfulness but she's completely lost in the codework...HELP D:" class="btmright"></div>
+        <div class="tab">
+            <button class="tablinks" onclick="openTAB(event, 'A Personal Corner')">A Personal Corner</button>
+            <button class="tablinks" onclick="openTAB(event, 'A Curious Corner')">A Curious Corner</button>
+            <button class="tablinks" onclick="openTAB(event, 'A Twisted Corner')">A Twisted Corner</button>
+          </div>
+          
+          <!-- Tab content -->
+          <div id="A Personal Corner" class="tabcontent">
+            <h3>A Personal Corner</h3>
+            <p>This corner is just a bunch of personal belongings, neatly packed togheter. Lil' curious, documents and even a photo...</p>
+            <h4> All pointless now...</h4>
+          </div>
+          
+          <div id="A Curious Corner" class="tabcontent">
+            <p><div id="box1"><img src="https://images.fineartamerica.com/images-medium-large-5/-curious-cat-liudmila-petarus.jpg" alt="Oh boy..."></div></p>
+            <h4>O-Oh! Guess we're not the only "curious ones" around here...</h4>
+          </div>
+
+          <div id="A Twisted Corner" class="tabcontent">
+            <p><image src = "https://i.ytimg.com/vi/KxIMjZ9uJ-U/maxresdefault.jpg"> </image> </p>
+            <h4>...</h4>
+          </div>
+
+        <!-- GIF-->
+        <div id="progresstext">
+            <img src= "content/progress_text.gif" alt="In Progress animation" class="topright"> 
+        </div>
+
+        <div id ="progress1">
+            <img src= "content/progress_anim.gif" alt="She's pretending cheerfulness but she's completely lost in the codework...HELP D:" class="btmright">
+        </div>
+        <!--GIF-->
+
+
 
 
     </body>
-
+<script src = "JScript.js"> </script>
 </html>
